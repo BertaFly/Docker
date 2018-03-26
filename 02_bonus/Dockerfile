@@ -1,5 +1,7 @@
 FROM debian
+
 MAINTAINER Ira Novykova <irrina.novikova@gmail.com>
+
 RUN apt-get -y update && \
 	apt-get -y upgrade && \
 	apt-get -y install vim && \
@@ -8,4 +10,5 @@ RUN apt-get -y update && \
 	apt-get -y install binutils && \
 	apt-get -y install make && \
 	apt-get -y install valgrind
+	
 CMD ["/bin/bash"]
